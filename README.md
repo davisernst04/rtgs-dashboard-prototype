@@ -15,6 +15,42 @@ Then visit:
 - **Dense:** http://localhost:3000/dense
 - **Bold:** http://localhost:3000/bold
 
+---
+
+## Minimal Design (v2 - Enhanced)
+
+The `/minimal` route has been significantly enhanced with interactive features, visual polish, and new panels while maintaining its clean, light aesthetic.
+
+### Interactive Features
+- **Player click/hover states** — Click on any player to see a detailed stats card with rating, stamina, distance, fatigue, impact, and key stats
+- **Live stat updates** — Simulated real-time data changes including player position updates, stamina changes, and match clock
+- **Filter toggles** — Independent toggles for passing lanes, heatmaps, and player labels
+- **Team switcher** — Click team badges in the scoreboard to toggle between home (U of S) and away (Calgary) team views
+
+### Visual Polish
+- **Smooth animations** — Framer Motion for all transitions, player markers, stat updates, and UI interactions
+- **Better typography hierarchy** — Refined font sizes, weights, and spacing throughout
+- **Subtle shadows and borders** — Added depth with shadow-sm on cards without cluttering the clean aesthetic
+- **Loading states** — Skeleton loaders during initial data fetch simulation
+
+### New Sections/Panels
+- **Quick Stats sidebar** — Possession, shots, passes, and distance covered with comparison view
+- **Match Events Timeline** — Goals, cards, subs, and chances in a clean vertical list with icons
+- **Substitutes panel** — Show reserve players with their stats, ratings, and freshness indicators
+- **Export/Share button** — Download match data as JSON file (mock functionality)
+
+### Responsiveness
+- **Tablet-optimized** — All panels and the pitch view work smoothly on iPad-sized screens
+- **Mobile-collapsed navigation** — Hamburger menu on mobile, horizontal scroll for stats
+- **Touch-friendly** — All interactive elements sized appropriately for touch
+
+### Technical Details
+- Uses Framer Motion for animations
+- All state managed locally with React hooks
+- Simulated live updates via setInterval (1-second clock, random player position changes)
+
+---
+
 ## Design Variations
 
 ### Variation A — Minimal / Clean (`/minimal`)
